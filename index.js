@@ -1,9 +1,7 @@
 // Book object: Represents a Book
-class Book {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
+function Book(title, author) {
+  this.title = title;
+  this.author = author;
 }
 
 const Store = {
@@ -39,9 +37,6 @@ const UI = {
     const row = document.createElement('tr');
 
     row.innerHTML = `
-
-
-    
       <td>${book.title}</td>
       <td>${book.author}</td>
       <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>

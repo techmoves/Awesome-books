@@ -1,20 +1,18 @@
-// Book Class: Represents a Book
-class Book {
-  constructor(title, author) {
+// Book object: Represents a Book
+function Book (title, author) {
     this.title = title;
     this.author = author;
-  }
 }
 
-// UI Class: Handle UI Tasks
-class UI {
-  static displayBooks() {
+
+let UI = {
+   displayBooks() {
     const books = Store.getBooks();
 
     books.forEach((book) => UI.addBookToList(book));
   }
 
-  static addBookToList(book) {
+  ,addBookToList(book) {
     const list = document.querySelector("#book-list");
 
     const row = document.createElement("tr");
@@ -28,13 +26,13 @@ class UI {
     list.appendChild(row);
   }
 
-  static deleteBook(el) {
+   ,deleteBook(el) {
     if (el.classList.contains("delete")) {
       el.parentElement.parentElement.remove();
     }
   }
 
-  static showAlert(message, className) {
+  ,showAlert(message, className) {
     const div = document.createElement("div");
     div.className = `alert alert-${className}`;
     div.appendChild(document.createTextNode(message));
@@ -46,17 +44,14 @@ class UI {
     setTimeout(() => document.querySelector(".alert").remove(), 3000);
   }
 
-  static clearFields() {
+  ,clearFields() {
     document.querySelector("#title").value = "";
     document.querySelector("#author").value = "";
   }
 }
 
-// from here
-
-// Store Class: Handles Storage
-class Store {
-  static getBooks() {
+let Store = {
+  getBooks() {
     let books;
     if (localStorage.getItem("books") === null) {
       books = [];
@@ -67,7 +62,7 @@ class Store {
     return books;
   }
 
-  static addBook(book) {
+  ,addBook(book) {
     const books = Store.getBooks();
     books.push(book);
     localStorage.setItem("books", JSON.stringify(books));

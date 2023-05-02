@@ -123,19 +123,17 @@ To run tests, run the following command:
 - Project is deployed using [GitHub Pages](https://github.com/techmoves/Awesome-books.git)
 
 
-
-
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 ** Phelelani Ndlovu **
+👤 **Phelelani Ndlovu**
 
 - GitHub: [@techmoves](https://github.com/techmoves)
 - Twitter: @Dopezonke_
 - LinkedIn: https://www.linkedin.com/in/phelelani-ndlovu-883916160/
 
- **Sonika Kumar**
+👤 **Sonika Kumar**
 - GitHub: [sonikak004](https://github.com/sonikak004)
 - Twitter: [@sonikak004](https://twitter.com/sonikak004)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/sonikak004/)
@@ -196,6 +194,6 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./mit.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

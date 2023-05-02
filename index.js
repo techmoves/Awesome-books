@@ -101,7 +101,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
 document.querySelector('#book-list').addEventListener('click', (e) => {
   UI.deleteBook(e.target);
 
-  Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
+ 
 
   UI.showAlert('Book Removed', 'success');
 });

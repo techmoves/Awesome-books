@@ -5,13 +5,32 @@ class Book {
     this.author = author;
   }
 }
-// UI Class: Handle UI Tasks
-class UI {
-  static displayBooks() {
+
+const Store = {
+  getBooks() {
+    let books;
+    if (localStorage.getItem('books') === null) {
+      books = [];
+    } else {
+      books = JSON.parse(localStorage.getItem('books'));
+    }
+    return books;
+  },
+
+  addBook(book) {
+    const books = Store.getBooks();
+    books.push(book);
+    localStorage.setItem('books', JSON.stringify(books));
+  },
+};
+
+const UI = {
+  displayBooks() {
     const books = Store.getBooks();
     books.forEach((book) => UI.addBookToList(book));
-  }
-  static addBookToList(book) {
+  },
+
+  addBookToList(book) {
     const list = document.querySelector('#book-list');
     const row = document.createElement('tr');
     row.innerHTML = `
@@ -20,13 +39,15 @@ class UI {
       <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
     `;
     list.appendChild(row);
-  }
-  static deleteBook(el) {
+  },
+
+  deleteBook(el) {
     if (el.classList.contains('delete')) {
       el.parentElement.parentElement.remove();
     }
-  }
-  static showAlert(message, className) {
+  },
+
+  showAlert(message, className) {
     const div = document.createElement('div');
     div.className = `alert alert-${className}`;
     div.appendChild(document.createTextNode(message));
@@ -35,29 +56,15 @@ class UI {
     container.insertBefore(div, form);
     // Vanish in 2.5 seconds
     setTimeout(() => document.querySelector('.alert').remove(), 2500);
-  }
-  static clearFields() {
+  },
+
+  clearFields() {
     document.querySelector('#title').value = '';
     document.querySelector('#author').value = '';
-  }
-}
+  },
+};
 // Store Class: Handles Storage
-class Store {
-  static getBooks() {
-    let books;
-    if (localStorage.getItem('books') === null) {
-      books = [];
-    } else {
-      books = JSON.parse(localStorage.getItem('books'));
-    }
-    return books;
-  }
-  static addBook(book) {
-    const books = Store.getBooks();
-    books.push(book);
-    localStorage.setItem('books', JSON.stringify(books));
-  }
-}
+
 // Event: Display Books
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
 // Event: Add a Book
@@ -88,7 +95,7 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   // Remove book from UI
   UI.deleteBook(e.target);
   // Remove book from loacal storage
-localStorage.clear();
+  localStorage.clear();
   // Show success message
   UI.showAlert('Book Removed', 'success');
 });

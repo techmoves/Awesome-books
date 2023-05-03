@@ -31,6 +31,7 @@ class UI {
   static deleteBook(el) {
     if (el.classList.contains("delete")) {
       el.parentElement.parentElement.remove();
+      
     }
   }
 
@@ -111,8 +112,7 @@ document.querySelector("#book-list").addEventListener("click", (e) => {
   // Remove book from UI
   UI.deleteBook(e.target);
 
-  // Remove book from store
-  Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
+  // Remove book from loacal storage
 
   // Show success message
   UI.showAlert("Book Removed", "success");

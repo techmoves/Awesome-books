@@ -4,14 +4,40 @@ body {
 a {
     list-style: none;
     text-decoration: none;
-
 }
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 8px;
-    margin-left: 150px;
-    flex-direction: ;
+.logo {
+  display: flex;
+  position: absolute;
+  margin-left: 150px;
+  top: 15px;
 }
-
+.logo a {
+  color: #2D2C2C;
+  font-size: 21px;
+}
+.nav-ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  width: 90%;
+}
+.menu-nav {
+  margin-left: 15px;
+}
+.menu {
+  border: 2px solid grey;
+  box-shadow: 2px 0px 1px 2px grey;
+}
+.menu-nav a {
+  color: #2D2C2C;
+  font-size: 21px;
+}
+#footer {
+  display: flex;
+  background-color: grey;
+  justify-content: center;
+  height: 28px;
+}
+.hidden {
+  display: none;
+}

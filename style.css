@@ -1,3 +1,17 @@
 body {
   margin: 0;
 }
+a {
+    list-style: none;
+    text-decoration: none;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    margin-left: 150px;
+    flex-direction: ;
+}
+

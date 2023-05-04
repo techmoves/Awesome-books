@@ -20,7 +20,7 @@ window.onload = function()
         break;
       }
     }
-    document.querySelectorAll(".menu").forEach((item)=>
+    document.querySelectorAll(".menu-nav").forEach((item)=>
     {
         item.addEventListener("click",function()
         {
@@ -28,10 +28,10 @@ window.onload = function()
             loadPage(path);
             if (path == "")
             {
-                window.history.pushState("","","/")
+                window.history.pushstate("","","/")
                 return;
             }
-            window.history.pushState("","",path);
+            window.history.pushstate("","",path);
         });
         
     });

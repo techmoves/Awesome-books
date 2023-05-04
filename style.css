@@ -1,43 +1,72 @@
 body {
   margin: 0;
 }
+
 a {
     list-style: none;
     text-decoration: none;
 }
+
 .logo {
   display: flex;
   position: absolute;
   margin-left: 150px;
-  top: 15px;
+  top: 29px;
 }
+
 .logo a {
   color: #2D2C2C;
   font-size: 21px;
+  font-weight: 500;
 }
+
 .nav-ul {
   display: flex;
   list-style: none;
   justify-content: flex-end;
   width: 90%;
 }
+
 .menu-nav {
   margin-left: 15px;
 }
+
 .menu {
+  margin: 10px 10px 10px 10px;
   border: 2px solid grey;
   box-shadow: 2px 0px 1px 2px grey;
 }
+
 .menu-nav a {
   color: #2D2C2C;
   font-size: 21px;
+  font-weight: 500;
 }
-#footer {
+
+.book-list {
+  color: #484343;
+  width: 78%;
+  display: flex;
+  justify-content: center;
+  height: 61px;
+  margin: 10% 10px 11px 138px;
+  border: 2px solid #555252;
+  align-items: center;
+}
+
+.copyright {
   display: flex;
   background-color: grey;
   justify-content: center;
   height: 28px;
 }
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 .hidden {
   display: none;
 }

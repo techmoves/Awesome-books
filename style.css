@@ -3,8 +3,8 @@ body {
 }
 
 a {
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
 
 .logo {
@@ -15,7 +15,7 @@ a {
 }
 
 .logo a {
-  color: #2D2C2C;
+  color: #2d2c2c;
   font-size: 21px;
   font-weight: 500;
 }
@@ -34,11 +34,11 @@ a {
 .menu {
   margin: 10px 10px 10px 10px;
   border: 2px solid grey;
-  box-shadow: 2px 0px 1px 2px grey;
+  box-shadow: 2px 0 1px 2px grey;
 }
 
 .menu-nav a {
-  color: #2D2C2C;
+  color: #2d2c2c;
   font-size: 21px;
   font-weight: 500;
 }
@@ -66,7 +66,8 @@ a {
   bottom: 0;
   width: 100%;
 }
-/* 
+
+/*
 .hidden {
   display: none;
 } */

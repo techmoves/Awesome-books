@@ -15,8 +15,8 @@ a {
 }
 
 .logo a {
-  color: #2d2c2c;
   font-size: 21px;
+  color: #676363;
   font-weight: 500;
 }
 
@@ -38,9 +38,21 @@ a {
 }
 
 .menu-nav a {
-  color: #2d2c2c;
+  color: #676363;
   font-size: 21px;
   font-weight: 500;
+}
+
+.add-book {
+  color: #484343;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 3%;
+}
+
+th {
+  color: #676363;
+  width: 50%;
 }
 
 .book-list {
@@ -67,7 +79,44 @@ a {
   width: 100%;
 }
 
-/*
+
 .hidden {
   display: none;
-} */
+}
+
+.table {
+  width: 40%;
+}
+
+.table-div {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin-top: 15px;
+}
+
+.cont {
+  color: #484343;
+  font-size: 2rem;
+}
+
+.container {
+ margin-top: 10.5%;
+}
+
+.cont-list > li {
+  list-style-type: square;
+  color: #484444;
+}
+
+.form-control {
+  width: 100%;
+}
+
+#book-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

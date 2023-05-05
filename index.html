@@ -19,36 +19,39 @@
         <li class="logo"><a href="#">Awesome books</a></li>
       </ul>
       <ul class="nav-ul">
-        <li class="menu-nav" value="list"><a href="#">list</a> </li>
-        <li class="menu-nav" value="Add new"><a href="#">Add new</a> </li>
-        <li class="menu-nav" value="contact"><a href="#">contact</a> </li>
+        <li id="item1" class="menu-nav" value="list"><a href="#">list</a> </li>
+        <li id="item2" class="menu-nav" value="Add new"><a href="#">Add new</a> </li>
+        <li id="item3" class="menu-nav" value="contact"><a href="#">contact</a> </li>
       </ul>
     </nav>
   </header>
 
   <!-- book list display section -->
-
+ 
+  <div id="book-section">
   <div class="book-list">
      <h2>
       All Awesome Books
      </h2>
   </div>
-
+  <div class="table-div">
+  <table class="table table-striped mt-5">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody id="book-list"></tbody>
+  </table>
+</div>
+</div>
   <!-- book list add section -->
 
-    <div class="container mt-4 hidden">
-    <h1 class="display-4 text-center">
-      <i class="fas fa-book-open text-primary"></i>Awesome books</h1>
-      <table class="table table-striped mt-5">
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody id="book-list"></tbody>
-      </table>
+    <div id="add-section" class="container hidden">
+    <h3 class="display-4 text-center add-book">
+      <i class="fas fa-book-open text-primary"></i>Add a new book</h3>
        <form id="book-form">
         <div class="form-group">
           <label for="title">Title</label>
@@ -58,17 +61,17 @@
           <label for="author">Author</label>
           <input type="text" id="author" class="form-control">
         </div>
-        <input type="submit" value="Add" class="btn btn-success btn-block">
+        <input type="submit" value="Add" class="btn btn-secondary btn-block button">
       </form>
   </div>
 
       <!-- contact me section  -->
 
-       <div class="container hidden">
-  <h1>contact Information</h1>
-    <p> Do you have any questions or you just want tosay "hello"?
+       <div id="contact-section" class="container hidden">
+  <h2 class="cont">contact Information</h2>
+    <p> Do you have any questions or you just want to say "hello"?
         you can reach out to us!
-        <ul>
+        <ul class="cont-list">
             <li> our e-mail:mail@mail.com</li>
             <li> our phone number:mail@mail.com</li>
             <li> our Address:Streetname 22,84503 city,country</li>

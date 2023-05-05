@@ -120,3 +120,15 @@ th {
   flex-direction: column;
   align-items: center;
 }
+
+#current-time-zone {
+ color: #8c8585;
+font-size: 21px;
+font-weight: bolder;
+width: 118%;
+display: flex;
+justify-items: flex-end;
+position: absolute;
+left: 76%;
+
+}

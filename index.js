@@ -24,3 +24,14 @@ itemThree.addEventListener('click', () => {
   bookSection.classList.add('hidden');
   addSection.classList.add('hidden');
 });
+
+
+function updateDateTime() {
+  const now = new Date();
+  const date = now.toLocaleDateString();
+  const time = now.toLocaleTimeString();
+  document.getElementById("time").innerHTML = `${date} ${time}`;
+}
+
+// Call updateDateTime function every second to update the time
+setInterval(updateDateTime, 1000);

@@ -34,7 +34,7 @@ class UI {
     row.innerHTML = `
       <td>${book.title}</td>
       <td>${book.author}</td>
-      <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
+      <td><a href="#" class="btn btn-secondary btn-sm delete">Remove</a></td>
     `;
     list.appendChild(row);
   }
@@ -92,6 +92,4 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   UI.deleteBook(e.target);
   // Remove book from local storage
   localStorage.clear();
-  // Show success message
-  UI.showAlert('Book Removed', 'success');
 });

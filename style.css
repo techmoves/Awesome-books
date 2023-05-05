@@ -79,7 +79,6 @@ th {
   width: 100%;
 }
 
-
 .hidden {
   display: none;
 }
@@ -103,7 +102,7 @@ th {
 }
 
 .container {
- margin-top: 10.5%;
+  margin-top: 10.5%;
 }
 
 .cont-list > li {
@@ -122,13 +121,12 @@ th {
 }
 
 #current-time-zone {
- color: #8c8585;
-font-size: 21px;
-font-weight: bolder;
-width: 118%;
-display: flex;
-justify-items: flex-end;
-position: absolute;
-left: 76%;
-
+  color: #8c8585;
+  font-size: 21px;
+  font-weight: bolder;
+  width: 118%;
+  display: flex;
+  justify-items: flex-end;
+  position: absolute;
+  left: 76%;
 }
